@@ -13,6 +13,8 @@
 		89EF4E331DBB97BC004552C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89EF4E321DBB97BC004552C0 /* Assets.xcassets */; };
 		89EF4E361DBB97BC004552C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EF4E341DBB97BC004552C0 /* LaunchScreen.storyboard */; };
 		89EF4E411DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E401DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift */; };
+		89EF4E4C1DBB987B004552C0 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */; };
+		89EF4E4E1DBB9A48004552C0 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E4D1DBB9A48004552C0 /* Double+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		89EF4E3C1DBB97BC004552C0 /* Swift_Extension_osxdevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_Extension_osxdevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EF4E401DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Extension_osxdevTests.swift; sourceTree = "<group>"; };
 		89EF4E421DBB97BC004552C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		89EF4E4D1DBB9A48004552C0 /* Double+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				89EF4E321DBB97BC004552C0 /* Assets.xcassets */,
 				89EF4E341DBB97BC004552C0 /* LaunchScreen.storyboard */,
 				89EF4E371DBB97BC004552C0 /* Info.plist */,
+				89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */,
+				89EF4E4D1DBB9A48004552C0 /* Double+.swift */,
 			);
 			path = Swift_Extension_osxdev;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89EF4E2E1DBB97BC004552C0 /* ViewController.swift in Sources */,
+				89EF4E4C1DBB987B004552C0 /* MyTableViewController.swift in Sources */,
+				89EF4E4E1DBB9A48004552C0 /* Double+.swift in Sources */,
 				89EF4E2C1DBB97BC004552C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
