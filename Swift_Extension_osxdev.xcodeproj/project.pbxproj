@@ -15,6 +15,7 @@
 		89EF4E411DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E401DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift */; };
 		89EF4E4C1DBB987B004552C0 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */; };
 		89EF4E4E1DBB9A48004552C0 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E4D1DBB9A48004552C0 /* Double+.swift */; };
+		89EF4E531DBB9CCC004552C0 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E521DBB9CCC004552C0 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		89EF4E421DBB97BC004552C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		89EF4E4D1DBB9A48004552C0 /* Double+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		89EF4E521DBB9CCC004552C0 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +83,8 @@
 		89EF4E2A1DBB97BC004552C0 /* Swift_Extension_osxdev */ = {
 			isa = PBXGroup;
 			children = (
-				89EF4E2B1DBB97BC004552C0 /* AppDelegate.swift */,
-				89EF4E2D1DBB97BC004552C0 /* ViewController.swift */,
-				89EF4E2F1DBB97BC004552C0 /* Main.storyboard */,
-				89EF4E321DBB97BC004552C0 /* Assets.xcassets */,
-				89EF4E341DBB97BC004552C0 /* LaunchScreen.storyboard */,
-				89EF4E371DBB97BC004552C0 /* Info.plist */,
-				89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */,
-				89EF4E4D1DBB9A48004552C0 /* Double+.swift */,
+				89EF4E511DBB9C99004552C0 /* SourceCodes */,
+				89EF4E501DBB9C8D004552C0 /* Resources */,
 			);
 			path = Swift_Extension_osxdev;
 			sourceTree = "<group>";
@@ -100,6 +96,37 @@
 				89EF4E421DBB97BC004552C0 /* Info.plist */,
 			);
 			path = Swift_Extension_osxdevTests;
+			sourceTree = "<group>";
+		};
+		89EF4E4F1DBB9C75004552C0 /* MyTableView */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */,
+				89EF4E521DBB9CCC004552C0 /* MyTableViewCell.swift */,
+			);
+			name = MyTableView;
+			sourceTree = "<group>";
+		};
+		89EF4E501DBB9C8D004552C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E2F1DBB97BC004552C0 /* Main.storyboard */,
+				89EF4E321DBB97BC004552C0 /* Assets.xcassets */,
+				89EF4E341DBB97BC004552C0 /* LaunchScreen.storyboard */,
+				89EF4E371DBB97BC004552C0 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		89EF4E511DBB9C99004552C0 /* SourceCodes */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E4F1DBB9C75004552C0 /* MyTableView */,
+				89EF4E2B1DBB97BC004552C0 /* AppDelegate.swift */,
+				89EF4E2D1DBB97BC004552C0 /* ViewController.swift */,
+				89EF4E4D1DBB9A48004552C0 /* Double+.swift */,
+			);
+			name = SourceCodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +179,7 @@
 				TargetAttributes = {
 					89EF4E271DBB97BC004552C0 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					89EF4E3B1DBB97BC004552C0 = {
 						CreatedOnToolsVersion = 8.0;
@@ -208,6 +235,7 @@
 				89EF4E2E1DBB97BC004552C0 /* ViewController.swift in Sources */,
 				89EF4E4C1DBB987B004552C0 /* MyTableViewController.swift in Sources */,
 				89EF4E4E1DBB9A48004552C0 /* Double+.swift in Sources */,
+				89EF4E531DBB9CCC004552C0 /* MyTableViewCell.swift in Sources */,
 				89EF4E2C1DBB97BC004552C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +373,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Swift_Extension_osxdev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.wendies.hothead.Swift-Extension-osxdev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,7 +388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Swift_Extension_osxdev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.wendies.hothead.Swift-Extension-osxdev";
 				PRODUCT_NAME = "$(TARGET_NAME)";

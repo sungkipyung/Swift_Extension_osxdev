@@ -11,7 +11,8 @@ import UIKit
 class MyTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate var items: [String]
+    fileprivate var items: [String]!
+    fileprivate var selectedIndexPath: IndexPath?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,22 +20,29 @@ class MyTableViewController: UIViewController {
     }
 }
 
-class MyTableViewController: UITableViewDataSource {
+extension MyTableViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath) as! MyTableViewCell
         
-        cell?.textLabel.text = items[indexPath.row]
+        cell.myTextLabel.text = items[indexPath.row]
+        
+        if selectedIndexPath == indexPath {
+            cell.backgroundColor = UIColor.red
+        } else {
+            cell.backgroundColor = UIColor.white
+        }
         
         return cell
     }
 }
 
-class MyTableViewController: UITableViewDelegate {
+extension MyTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        selectedIndexPath = indexPath
+        tableView.reloadData()
     }
 }
