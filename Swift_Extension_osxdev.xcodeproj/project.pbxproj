@@ -14,8 +14,8 @@
 		89EF4E361DBB97BC004552C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EF4E341DBB97BC004552C0 /* LaunchScreen.storyboard */; };
 		89EF4E411DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E401DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift */; };
 		89EF4E4C1DBB987B004552C0 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */; };
-		89EF4E4E1DBB9A48004552C0 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E4D1DBB9A48004552C0 /* Double+.swift */; };
 		89EF4E531DBB9CCC004552C0 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E521DBB9CCC004552C0 /* MyTableViewCell.swift */; };
+		89EF4E561DBB9F03004552C0 /* DoubleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF4E551DBB9F03004552C0 /* DoubleExtensionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,14 @@
 		89EF4E401DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Extension_osxdevTests.swift; sourceTree = "<group>"; };
 		89EF4E421DBB97BC004552C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
-		89EF4E4D1DBB9A48004552C0 /* Double+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		89EF4E521DBB9CCC004552C0 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		89EF4E551DBB9F03004552C0 /* DoubleExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensionTest.swift; sourceTree = "<group>"; };
+		89EF4E571DBB9F3B004552C0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		89EF4E591DBBA1E7004552C0 /* Initializer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initializer.playground; sourceTree = "<group>"; };
+		89EF4E5B1DBBA319004552C0 /* Methods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Methods.playground; sourceTree = "<group>"; };
+		89EF4E5E1DBBA385004552C0 /* MutatingMethods.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MutatingMethods.playground; sourceTree = "<group>"; };
+		89EF4E601DBBA3E3004552C0 /* Subscripts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subscripts.playground; sourceTree = "<group>"; };
+		89EF4E621DBBA450004552C0 /* NestedType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NestedType.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +99,19 @@
 			isa = PBXGroup;
 			children = (
 				89EF4E401DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift */,
+				89EF4E551DBB9F03004552C0 /* DoubleExtensionTest.swift */,
 				89EF4E421DBB97BC004552C0 /* Info.plist */,
 			);
 			path = Swift_Extension_osxdevTests;
 			sourceTree = "<group>";
 		};
-		89EF4E4F1DBB9C75004552C0 /* MyTableView */ = {
+		89EF4E4F1DBB9C75004552C0 /* Extension Syntax */ = {
 			isa = PBXGroup;
 			children = (
 				89EF4E4B1DBB987B004552C0 /* MyTableViewController.swift */,
 				89EF4E521DBB9CCC004552C0 /* MyTableViewCell.swift */,
 			);
-			name = MyTableView;
+			name = "Extension Syntax";
 			sourceTree = "<group>";
 		};
 		89EF4E501DBB9C8D004552C0 /* Resources */ = {
@@ -121,12 +128,65 @@
 		89EF4E511DBB9C99004552C0 /* SourceCodes */ = {
 			isa = PBXGroup;
 			children = (
-				89EF4E4F1DBB9C75004552C0 /* MyTableView */,
+				89EF4E4F1DBB9C75004552C0 /* Extension Syntax */,
+				89EF4E541DBB9EC8004552C0 /* Computed Properties  */,
+				89EF4E581DBBA1A2004552C0 /* Initializer */,
+				89EF4E5A1DBBA307004552C0 /* Methods */,
+				89EF4E5D1DBBA372004552C0 /* Mutating Instance Methods   */,
+				89EF4E5F1DBBA3CB004552C0 /* Subscripts */,
+				89EF4E611DBBA440004552C0 /* Nested Type */,
 				89EF4E2B1DBB97BC004552C0 /* AppDelegate.swift */,
 				89EF4E2D1DBB97BC004552C0 /* ViewController.swift */,
-				89EF4E4D1DBB9A48004552C0 /* Double+.swift */,
 			);
 			name = SourceCodes;
+			sourceTree = "<group>";
+		};
+		89EF4E541DBB9EC8004552C0 /* Computed Properties  */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E571DBB9F3B004552C0 /* MyPlayground.playground */,
+			);
+			name = "Computed Properties ";
+			sourceTree = "<group>";
+		};
+		89EF4E581DBBA1A2004552C0 /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E591DBBA1E7004552C0 /* Initializer.playground */,
+			);
+			name = Initializer;
+			sourceTree = "<group>";
+		};
+		89EF4E5A1DBBA307004552C0 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E5B1DBBA319004552C0 /* Methods.playground */,
+			);
+			name = Methods;
+			sourceTree = "<group>";
+		};
+		89EF4E5D1DBBA372004552C0 /* Mutating Instance Methods   */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E5E1DBBA385004552C0 /* MutatingMethods.playground */,
+			);
+			name = "Mutating Instance Methods  ";
+			sourceTree = "<group>";
+		};
+		89EF4E5F1DBBA3CB004552C0 /* Subscripts */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E601DBBA3E3004552C0 /* Subscripts.playground */,
+			);
+			name = Subscripts;
+			sourceTree = "<group>";
+		};
+		89EF4E611DBBA440004552C0 /* Nested Type */ = {
+			isa = PBXGroup;
+			children = (
+				89EF4E621DBBA450004552C0 /* NestedType.playground */,
+			);
+			name = "Nested Type";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +294,6 @@
 			files = (
 				89EF4E2E1DBB97BC004552C0 /* ViewController.swift in Sources */,
 				89EF4E4C1DBB987B004552C0 /* MyTableViewController.swift in Sources */,
-				89EF4E4E1DBB9A48004552C0 /* Double+.swift in Sources */,
 				89EF4E531DBB9CCC004552C0 /* MyTableViewCell.swift in Sources */,
 				89EF4E2C1DBB97BC004552C0 /* AppDelegate.swift in Sources */,
 			);
@@ -244,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EF4E561DBB9F03004552C0 /* DoubleExtensionTest.swift in Sources */,
 				89EF4E411DBB97BC004552C0 /* Swift_Extension_osxdevTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
